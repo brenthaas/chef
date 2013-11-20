@@ -1,0 +1,35 @@
+{
+  "run_list":[
+    "databox",
+    "rackbox"
+  ],
+  "appbox": {
+    "deploy_keys": ["ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCNO6v40C1lVTysHFwBnhqZtgKEK8Tqixql+YHCvmTv9EktxsY+/qpb0gr+NKOa+nGyTliw4KK+diFEf6CMw0D/zH1TTEQNUBlMEHdstO5LRGXAM3lDsVV1mYnf1a+2eq3ZGRjQbN780I1OktBLl6ijCBWNSbuiqxjMye3KWCufcozcDy2v1oNZTeIKu+dyVjcyHbcxpIuauF+Ek6c4FwcRNmziv8OHAnzPx5PWcEk8ikaTxnLF3lBZ+qChmuJmkuFpWjJcKjhHndG4HcVgF0YFOeAwo76Bcn+fwV6FUjsfaE4OV2qBWN2VHeiUpu0XWpV9ZHebrUTcTK30bEIRza6N"],
+    "admin_keys": ["ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCNO6v40C1lVTysHFwBnhqZtgKEK8Tqixql+YHCvmTv9EktxsY+/qpb0gr+NKOa+nGyTliw4KK+diFEf6CMw0D/zH1TTEQNUBlMEHdstO5LRGXAM3lDsVV1mYnf1a+2eq3ZGRjQbN780I1OktBLl6ijCBWNSbuiqxjMye3KWCufcozcDy2v1oNZTeIKu+dyVjcyHbcxpIuauF+Ek6c4FwcRNmziv8OHAnzPx5PWcEk8ikaTxnLF3lBZ+qChmuJmkuFpWjJcKjhHndG4HcVgF0YFOeAwo76Bcn+fwV6FUjsfaE4OV2qBWN2VHeiUpu0XWpV9ZHebrUTcTK30bEIRza6N"]
+  },
+  "databox": {
+    "db_root_password": "pimpmycloset01",
+    "databases": {
+      "mysql": [
+        { "username": "imghub",
+          "password": "pimpmycloset01",
+          "database_name": "imghub_production" }
+      ],
+      "postgresql": []
+    }
+  },
+  "rackbox": {
+    "ruby": {
+      "versions": ["1.9.3-p448", "Ruby 2.0.0-p247"],
+      "global_version": "1.9.3-p448"
+    },
+    "apps": {
+      "unicorn": [
+        { "appname": "imghub",
+          "hostname": "imghub.lowkeysoftware.com"
+        }
+      ]
+    }
+  }
+}
+
