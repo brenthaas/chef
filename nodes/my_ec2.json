@@ -31,7 +31,7 @@
         { "appname": "imghub",
           "hostname": "imghub.lowkeysoftware.com"
         },
-        { "appname": "blog",
+        { "appname": "bblog",
           "hostname": "blog.lowkeysoftware.com"
         }
       ]
