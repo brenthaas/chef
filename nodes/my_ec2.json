@@ -23,8 +23,8 @@
   },
   "rackbox": {
     "ruby": {
-      "versions": ["1.9.3-p448", "2.0.0-p247"],
-      "global_version": "1.9.3-p448"
+      "versions": ["1.9.3-p484", "2.0.0-p353"],
+      "global_version": "1.9.3-p484"
     },
     "apps": {
       "unicorn": [
